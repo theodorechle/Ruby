@@ -2,7 +2,7 @@ require 'set'
 
 def actual_word word, known_letters
     # return a string where not find characters are replaced by "-" except for " " and "-"
-    return word.gsub(/[^- #{known_letters.join("|")}#{known_letters.join("|").upcase}]/ , "-")
+    return word.gsub(/[^- #{known_letters.join("|")}#{known_letters.join("|").upcase}]/ , "_")
 end
 
 
